@@ -1,0 +1,158 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --cl-1: #111111;
+    --cl-2: #0066C2;
+    --cl-3: #FFFFFF;
+    --cl-4: #FFD8B1;
+    --cl-5: #FF7518;
+    --cl-6: #808080;
+    --cl-7: #DDDDDD;
+
+    --fw-xl: 900;
+    --fw-lg: 700;
+    --fw-md: 400;
+
+    --fs-400: ;
+
+    --mb-300: 3em;
+    --mb-200: 2em;
+    --mb-150: 1.5em;
+    --mb-100: 1em;
+    --mb-050: 0.5em;
+}
+
+body {
+    font-size: var(--fs-400);
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    outline-style: none;
+    background-color: transparent;
+}
+
+/* ===== UTILITIES ===== */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* ==== ==== */
+.login {
+    height: 100vh;
+    padding: 2em 0;
+}
+
+.login__wrapper {
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.login__home {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login__form {
+    padding: 2em 0;
+}
+
+.login__form-title {
+    color: var(--cl-2);
+    margin-bottom: var(--mb-150);
+}
+
+.login__form-field {
+    width: 100%;
+    position: relative;
+    border: 2px solid var(--cl-7);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: var(--mb-050);
+}
+
+.login__form-input {
+    width: 100%;
+    padding: 1em 3em;
+}
+
+.login__form-label,
+.login__form-pword {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login__form-label {
+    left: 1.25em;
+}
+
+.login__form-pword {
+    right: 1.25em;
+}
+
+.login__form-aside {
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    color: var(--cl-6);
+    margin-top: -0.5em;
+    margin-bottom: var(--mb-200);
+}
+
+.login__form-login {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 30px;
+    color: var(--cl-3);
+    background-color: var(--cl-5);
+    margin-bottom: var(--mb-050);
+}
+
+.login__form-logup {
+    color: var(--cl-6);
+    text-align: center;
+}
+
+.login__form-signu {
+    margin-left: 0.2em;
+    color: var(--cl-5);
+}

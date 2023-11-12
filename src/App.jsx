@@ -1,6 +1,23 @@
+import { 
+    createBrowserRouter, 
+    createRoutesFromElements, 
+    Route, 
+    RouterProvider 
+} from "react-router-dom";
+
+// Pages
+import Login from "./pages/Login";
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/">
+            <Route path="/login" element={<Login />} />
+        </Route>
+    )
+);
 const App = () => {
     return (
-        <div className="">Hello from Travel Buddy!</div>
+        <RouterProvider router={router}></RouterProvider>
     );
 }
 
