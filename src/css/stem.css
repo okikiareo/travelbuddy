@@ -1,0 +1,23 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap";
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.welcome {
+    height: 100vh;
+    padding: 2em 0;
+}
+.welcome_wrapper {
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
