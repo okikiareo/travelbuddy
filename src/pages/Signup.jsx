@@ -1,4 +1,4 @@
-import lockIcon from "../assets/images/icon-lock.svg";
+import hidIcon from "../assets/images/icon-hide.svg";
 import showIcon from "../assets/images/icon-show.svg";
 import backIcon from "../assets/images/icon-left.svg";
 import { Form, Link } from "react-router-dom";
@@ -23,11 +23,11 @@ const Signup = ()=> {
                     </div>
                     <div className="form-field flex">
                             <input className="form-input" type="password" name="password" id=""  placeholder="Password"/>
-                            <img className="form-pword" src={showIcon} alt="" />
+                            <img className="form-pword" src={hidIcon} alt="" />
                         </div>
                         <div className="form-field flex">
                             <input className="form-input" type="password" name="password" id=""  placeholder="Confirm Password"/>
-                            <img className="form-pword" src={showIcon} alt="" />
+                            <img className="form-pword" src={hidIcon} alt="" />
                         </div>
                     <Link className="login__form-login continue" to="">Continue</Link>
                     <div className="form-logup">
