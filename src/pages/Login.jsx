@@ -1,3 +1,4 @@
+import "./Login.css";
 import backIcon from "../assets/images/icon-left.svg";
 import mailIcon from "../assets/images/icon-mail.svg";
 import lockIcon from "../assets/images/icon-lock.svg";
@@ -28,7 +29,7 @@ const Login = () => {
                             <label className="login__form-label" htmlFor="">
                                 <img src={lockIcon} alt="" />
                             </label>
-                            <input className="login__form-input" type="email" name="email" id="" />
+                            <input className="login__form-input" type="password" name="email" id="" />
                             <img className="login__form-pword" src={showIcon} alt="" />
                         </div>
                         <Link className="login__form-aside" to="">
