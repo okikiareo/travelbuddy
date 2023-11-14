@@ -1,4 +1,6 @@
+import "../css/featureA.css";
 import "./Login.css";
+
 import backIcon from "../assets/images/icon-left.svg";
 import mailIcon from "../assets/images/icon-mail.svg";
 import lockIcon from "../assets/images/icon-lock.svg";
