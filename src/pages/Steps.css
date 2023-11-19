@@ -1,0 +1,17 @@
+.step-header {
+    box-shadow: 0 0 5px -3px hsl(0, 0%, 0%, 0.5);
+}
+
+.step-header__wrap {
+    height: 5em;
+}
+
+.step-header__home {
+    display: block;
+    margin-right: 1em;
+}
+
+.step-header__unit {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-lg);
+}
