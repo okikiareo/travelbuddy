@@ -16,10 +16,9 @@ import StepC from "./pages/StepC";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/">
-            <Route path='/Welcome' element={<Welcome/>}/>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="login" element={<Login />} />
+            <Route index element={<Login />} />
+            <Route path='Welcome' element={<Welcome/>}/>
+            <Route path="signup" element={<Signup />} />
             <Route path="step1" element={<StepA />} />
             <Route path="step2" element={<StepB />} />
             <Route path="step3" element={<StepC />} />
