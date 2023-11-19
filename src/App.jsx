@@ -7,11 +7,17 @@ import {
 
 // Pages
 import Login from "./pages/Login";
+import StepA from "./pages/StepA";
+import StepB from "./pages/StepB";
+import StepC from "./pages/StepC";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/">
-            <Route path="/login" element={<Login />} />
+            <Route path="login" element={<Login />} />
+            <Route path="step1" element={<StepA />} />
+            <Route path="step2" element={<StepB />} />
+            <Route path="step3" element={<StepC />} />
         </Route>
     )
 );
