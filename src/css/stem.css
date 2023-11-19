@@ -122,3 +122,21 @@ margin-right: 1rem;
 width: 6rem;
     }
 }
+
+/* FORGOT PASSWORD */
+.forgot-info img{
+margin-bottom: 1.5rem;
+}
+.forgot-form {
+    padding: .8em 0;
+}
+.forgot-back{
+    margin-right: 3rem;
+}
+
+@media(max-width: 350px){
+    .forgot-back{
+        margin-right: 2rem;
+    }
+    
+}

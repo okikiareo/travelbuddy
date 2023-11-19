@@ -9,7 +9,8 @@ import {
 import Welcome from "./pages/Welcome";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import Verified from "./pages/verified"
+import Verified from "./pages/verified";
+import Forgotpw from "./pages/Forgotpw";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path='/verified' element={<Verified/>}/>
+            <Route path='/forgot' element={<Forgotpw/>}/>
         </Route>
     )
 );
