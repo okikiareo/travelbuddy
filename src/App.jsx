@@ -2,8 +2,7 @@ import {
     createBrowserRouter, 
     createRoutesFromElements, 
     Route, 
-    RouterProvider ,
-    Outlet
+    RouterProvider
 } from "react-router-dom";
 
 // Pages
@@ -16,7 +15,7 @@ import StepC from "./pages/StepC";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Outlet />}>
+        <Route path="/">
             <Route index element={<Login />} />
             <Route path='Welcome' element={<Welcome/>}/>
             <Route path="signup" element={<Signup />} />
@@ -28,7 +27,7 @@ const router = createBrowserRouter(
 );
 const App = () => {
     return (
-        <RouterProvider router={router}></RouterProvider>
+        <RouterProvider router={router} />
     );
 }
 
